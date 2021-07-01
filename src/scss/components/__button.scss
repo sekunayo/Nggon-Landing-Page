@@ -1,0 +1,17 @@
+.button {
+  font-family: "Poppins", sans-serif;
+  outline: 0;
+  padding: 10px 20px;
+  text-transform: capitalize;
+
+  &-dark {
+    background-color: $green;
+    color: $white;
+    border: 1px solid transparent;
+  }
+  &-light {
+    border: 2px solid $green;
+    background-color: transparent;
+    color: $green;
+  }
+}

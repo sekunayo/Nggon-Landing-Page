@@ -1,0 +1,36 @@
+.page-header {
+  grid-column: 2/2;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  border-bottom: 1px solid $light-grey;
+  &-box {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+  }
+  &-nav ul,
+  &-signup ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-nav {
+    width: 400px;
+  }
+  &-navlink {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: $dark-grey;
+  }
+  &-signup {
+    width: 250px;
+    &-navlink {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: $black;
+    }
+  }
+}

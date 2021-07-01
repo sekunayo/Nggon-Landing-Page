@@ -1,0 +1,20 @@
+.sponsor {
+  grid-column: 2/2;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  &-box {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &-image {
+    width: 100px;
+    height: 100px;
+    & img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
