@@ -15,7 +15,7 @@ function Header() {
     <header className="page-header ">
       <div className="page-header-box">
         <div className="page-header-logo">
-          <animated.p style={styles}>aaa</animated.p>
+          <animated.h2 style={styles}>Nggon.</animated.h2>
         </div>
         <nav className="page-header-nav">
           <ul>
