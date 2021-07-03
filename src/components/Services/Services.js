@@ -28,7 +28,12 @@ function Services(props) {
             libero rutrum sit amet.
           </p>
           <div data-aos="fade-up">
-            <a href="consult">Consult Now</a>
+            <a href="consult">
+              Consult Now
+              <span>
+                <i className="fas fa-chevron-right"></i>
+              </span>
+            </a>
           </div>
         </div>
 
@@ -49,7 +54,12 @@ function Services(props) {
             libero rutrum sit amet.
           </p>
           <div data-aos="fade-up">
-            <a href="consult">Consult Now</a>
+            <a href="consult">
+              Consult Now
+              <span>
+                <i className="fas fa-chevron-right"></i>
+              </span>
+            </a>
           </div>
         </div>
         <div className="services-box-image" data-aos="fade-left">

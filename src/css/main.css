@@ -34,6 +34,20 @@ body {
   position: relative;
 }
 
+.loading-app {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #03381c;
+}
+
 .page-header {
   -ms-grid-column: 2;
   grid-column: 2/2;
@@ -41,7 +55,6 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 200px;
       grid-template-columns: 1fr 200px;
-  border-bottom: 1px solid #bac2bf;
 }
 
 .page-header-box {
@@ -82,8 +95,6 @@ body {
   font-size: 0.85rem;
   font-weight: 400;
   color: #333333ff;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .page-header-signup {
@@ -321,6 +332,19 @@ body {
      object-fit: cover;
 }
 
+.overlay-white {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(rgba(128, 128, 128, 0)));
+  background: linear-gradient(to right, #fff, rgba(128, 128, 128, 0));
+  z-index: 1;
+}
+
 .overlay-text-container {
   position: absolute;
   top: 100px;
@@ -386,6 +410,12 @@ body {
   font-weight: 900;
 }
 
+.overlay-white-relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .sponsor {
   -ms-grid-column: 2;
   grid-column: 2/2;
@@ -422,6 +452,11 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   height: 180px;
+}
+
+.sponsor-svg-logo svg {
+  width: 100px !important;
+  height: 100px !important;
 }
 
 .more-info {
@@ -1167,4 +1202,30 @@ body {
 
 .footer-form button {
   padding: 20px !important;
+}
+
+.loading-circle {
+  height: 50px;
+  width: 50px;
+  background-color: #f6f7f7;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.error svg {
+  width: 500px !important;
+  height: 500px !important;
 }

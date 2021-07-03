@@ -13,18 +13,17 @@
   }
 }
 .overlay {
-  // &-white {
-  //   position: fixed;
-  //   width: auto;
-  //   height: 500px;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   // background-color: #fff;
-  //   z-index: 2;
-  //   cursor: pointer;
-  // }
+  &-white {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #fff, rgba(128, 128, 128, 0));
+    z-index: 1;
+  }
   &-text-container {
     position: absolute;
     top: 100px;
@@ -66,4 +65,9 @@
 }
 .bold {
   font-weight: 900;
+}
+.overlay-white-relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }

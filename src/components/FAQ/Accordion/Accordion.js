@@ -19,7 +19,7 @@ function Accordion(props) {
         <div className="faq-accordion-text">
           <h5>{props.heading}</h5>
           <i
-            class={`${showText ? "fas fa-minus" : "fas fa-plus"}`}
+            className={`${showText ? "fas fa-minus" : "fas fa-plus"}`}
             onClick={setClickHandler}
           ></i>
         </div>

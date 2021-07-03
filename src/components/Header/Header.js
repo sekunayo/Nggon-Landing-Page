@@ -1,42 +1,52 @@
 import React from "react";
-import Button from "../Button/Button";
-import { useSpring, animated } from "react-spring";
+import { useSpring, useTrail, animated } from "@react-spring/web";
 
 function Header() {
+  const navigation = ["About", "Features", "Invest", "Consults"];
+  const trailAnimation = useTrail(navigation.length, {
+    from: { opacity: 0, marginTop: -100, marginLeft: -100 },
+    to: { opacity: 1, marginTop: 0, marginLeft: 0 },
+  });
   const styles = useSpring({
-    loop: true,
-    to: [
-      { opacity: 1, color: "#ffaaee" },
-
-      { opacity: 0, color: "rgb(14,26,19)" },
-    ],
-    from: { opacity: 0, color: "red" },
+    from: { opacity: 0, marginTop: -100, marginLeft: -100 },
+    to: { opacity: 1, marginTop: 0, marginLeft: 0 },
   });
   return (
-    <animated.header className="page-header ">
+    <header className="page-header ">
       <div className="page-header-box">
         <div className="page-header-logo">
-          <p>aaa</p>
+          <animated.p style={styles}>aaa</animated.p>
         </div>
         <nav className="page-header-nav">
           <ul>
-            <li className="page-header-navlink">About</li>
-            <li className="page-header-navlink">Features</li>
-            <li className="page-header-navlink">Invest</li>
-            <li className="page-header-navlink">Consults</li>
+            {trailAnimation.map((props, index) => {
+              return (
+                <animated.li
+                  className="page-header-navlink"
+                  style={props}
+                  key={navigation[index]}
+                >
+                  {navigation[index]}
+                </animated.li>
+              );
+            })}
           </ul>
         </nav>
         <nav className="page-header-signup">
           <ul>
-            <li className="page-header-signup-navlink bolder">Login</li>
-            <Button
-              buttonStyle="button button-light"
-              children="create account"
-            />
+            <animated.li
+              style={styles}
+              className="page-header-signup-navlink bolder"
+            >
+              Login
+            </animated.li>
+            <animated.button className="button button-light" style={styles}>
+              create account
+            </animated.button>
           </ul>
         </nav>
       </div>
-    </animated.header>
+    </header>
   );
 }
 

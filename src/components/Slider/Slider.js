@@ -27,10 +27,10 @@ function Slider() {
           </div>
           <div className="slider-arrows">
             <div className="slider-arrows-prev">
-              <i class="fas fa-chevron-left"></i>
+              <i className="fas fa-chevron-left"></i>
             </div>
             <div className="slider-arrows-next">
-              <i class="fas fa-chevron-right"></i>
+              <i className="fas fa-chevron-right"></i>
             </div>
           </div>
         </div>

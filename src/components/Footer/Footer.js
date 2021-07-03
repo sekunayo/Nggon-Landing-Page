@@ -75,9 +75,9 @@ function Footer() {
 
         <div className="footer-bottom">
           <div className="footer-icons">
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram-square"></i>
+            <i className="fab fa-linkedin"></i>
+            <i className="fab fa-facebook-square"></i>
+            <i className="fab fa-instagram-square"></i>
           </div>
           <div className="footer-copywright">
             <p>All rights reserved. &copy; 2021 Nggon</p>

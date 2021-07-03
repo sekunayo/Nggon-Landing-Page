@@ -13,5 +13,9 @@
     justify-content: center;
     align-items: flex-end;
     height: 180px;
+    & svg {
+      width: 100px !important;
+      height: 100px !important;
+    }
   }
 }
