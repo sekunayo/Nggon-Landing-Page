@@ -1,5 +1,5 @@
 import React from "react";
-import service1 from "../../assets/images/concepting.jpg";
+import faq from "../../assets/images/faq.jpg";
 import Accordion from "./Accordion/Accordion";
 
 function FAQ() {
@@ -30,9 +30,13 @@ function FAQ() {
     <section className="faq">
       <div className="faq-box">
         <div className="faq-first-box">
-          <h3 className="heading-3">Frequently asked questions</h3>
+          <h3 className="heading-3" data-aos="fade-up">
+            Frequently asked questions
+          </h3>
           <div className="faq-first-box-image">
-            <img src={service1} alt="faq"></img>
+            <div className="absolute-image">
+              <img src={faq} alt="faq"></img>
+            </div>
           </div>
         </div>
         <div className="faq-second-box">

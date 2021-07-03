@@ -3,7 +3,7 @@ import hero from "../../assets/images/hero.jpg";
 import Button from "../Button/Button";
 function Hero() {
   return (
-    <div className="hero">
+    <div className="hero animate__animated animate__SlideInLeft">
       <div className="hero-image">
         <img src={hero} alt="hero"></img>
         <div className="overlay-white"></div>

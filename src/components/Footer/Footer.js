@@ -7,23 +7,25 @@ function Footer() {
         <div className="footer-top">
           <div className="footer-contact">
             <div className="footer-contact-item">
-              <h5 className="heading-5">Address</h5>
-              <p>
+              <h5 className="heading-5" data="fade-up">
+                Address
+              </h5>
+              <p data-aos="fade-up">
                 St Xizhiman Inner, 5th Floor-Building Sojhu 5333 Xinjiekou
                 Residential District, Beijing, China.
               </p>
             </div>
             <div className="footer-contact-item">
-              <h5>Email</h5>
-              <p>info@nggon.com</p>
+              <h5 data-aos="fade-up">Email</h5>
+              <p data-aos="fade-up">info@nggon.com</p>
             </div>
             <div className="footer-contact-item">
-              <h5>Phone</h5>
-              <p>+86 (406) 555-0120</p>
+              <h5 data-aos="fade-up">Phone</h5>
+              <p data-aos="fade-up">+86 (406) 555-0120</p>
             </div>
             <div className="footer-contact-item ">
-              <h5>Branch Office</h5>
-              <p className="footer-branch footer-branch-1">
+              <h5 data-aos="fade-up">Branch Office</h5>
+              <p data-aos="fade-up" className="footer-branch footer-branch-1">
                 <span className="footer-contact-item-info">
                   <b>Berlin</b>,Germany
                 </span>
@@ -36,7 +38,7 @@ function Footer() {
                   <b>Jakarta</b>,Indonesia
                 </span>
               </p>
-              <p className="footer-branch footer-branch-2">
+              <p data-aos="fade-up" className="footer-branch footer-branch-2">
                 <span className="footer-contact-item-info">
                   <b>Canberra</b>,Australia
                 </span>
@@ -48,10 +50,26 @@ function Footer() {
             </div>
           </div>
           <form className="footer-form">
-            <input type="text" placeholder="Full Name"></input>
-            <input type="email" placeholder="Email Address"></input>
-            <textarea rows="4" placeholder="Message"></textarea>
-            <Button children="Send Message" buttonStyle="button button-dark" />
+            <input
+              type="text"
+              placeholder="Full Name"
+              data-aos="fade-up"
+            ></input>
+            <input
+              type="email"
+              placeholder="Email Address"
+              data-aos="fade-up"
+            ></input>
+            <textarea
+              rows="4"
+              placeholder="Message"
+              data-aos="fade-up"
+            ></textarea>
+            <Button
+              children="Send Message"
+              buttonStyle="button button-dark"
+              data-aos="fade-up"
+            />
           </form>
         </div>
 
@@ -62,7 +80,7 @@ function Footer() {
             <i class="fab fa-instagram-square"></i>
           </div>
           <div className="footer-copywright">
-            <p>All rights reserved.2021 Nggon</p>
+            <p>All rights reserved. &copy; 2021 Nggon</p>
           </div>
         </div>
       </div>

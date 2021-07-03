@@ -1,14 +1,16 @@
 import React from "react";
-import service1 from "../../assets/images/concepting.jpg";
+import minimalism from "../../assets/images/minimalism.jpg";
 
 function Slider() {
   return (
     <section className="slider">
-      <div className="slider-image">
-        <img src={service1} alt="slider_image"></img>
+      <div className="slider-image" data-aos="fade-right">
+        <div className="slider-absolute-image">
+          <img src={minimalism} alt="slider_image"></img>
+        </div>
       </div>
       <div className="slider-text-container">
-        <h3 className="heading-3">
+        <h3 className="heading-3" data-aos="fade-up">
           Clean Rounded Triangle Minimalism Style Building
         </h3>
         <div className="slider-preview">
