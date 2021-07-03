@@ -22,8 +22,8 @@
   }
   &-navlink {
     font-size: 0.85rem;
-    font-weight: 600;
-    color: $dark-grey;
+    font-weight: 400;
+    color: $black;
   }
   &-signup {
     width: 250px;
@@ -33,4 +33,7 @@
       color: $black;
     }
   }
+}
+.bolder {
+  font-weight: 900 !important;
 }

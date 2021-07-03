@@ -1,0 +1,101 @@
+.footer {
+  grid-column: 2/2;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  &-box {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 60px;
+  }
+  &-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    height: 350px;
+  }
+  &-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    & p {
+      font-size: 0.9rem;
+    }
+  }
+  &-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+    & i {
+      color: $black;
+      font-size: 1.5rem;
+    }
+  }
+  &-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & h5 {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    & p {
+      font-size: 0.95rem;
+      width: 500px;
+    }
+    &-item {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-row-gap: 10px;
+      //   &-info {
+      //     width: 50px;
+      //   }
+      &-line {
+        width: 2px;
+        height: 15px;
+        display: flex;
+        align-self: center;
+        background-color: $light-grey;
+      }
+    }
+  }
+  &-branch {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // width: 200px;
+  }
+  &-branch-1 {
+    width: 450px !important;
+  }
+  &-branch-2 {
+    width: 300px !important;
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // height: 350px;
+    // align-self: flex-end;
+    & input,
+    textarea {
+      padding: 20px;
+      outline: 0;
+      border: 1px solid $light-grey;
+    }
+    & input::placeholder,
+    & textarea::placeholder {
+      color: $light-grey;
+      font-size: 0.8rem;
+    }
+    & textarea {
+      overflow-y: auto;
+    }
+    & button {
+      padding: 20px !important;
+    }
+  }
+}

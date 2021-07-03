@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="hero">
       <div className="hero-image">
-        <img src={hero}></img>
+        <img src={hero} alt="hero"></img>
         <div className="overlay-white"></div>
         <div className="overlay-text-container">
           <h1>

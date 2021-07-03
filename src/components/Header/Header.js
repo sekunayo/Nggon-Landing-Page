@@ -18,7 +18,7 @@ function Header() {
         </nav>
         <nav className="page-header-signup">
           <ul>
-            <li className="page-header-signup-navlink">Login</li>
+            <li className="page-header-signup-navlink bolder">Login</li>
             <Button
               buttonStyle="button button-light"
               children="create account"

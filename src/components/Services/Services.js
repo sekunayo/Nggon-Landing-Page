@@ -21,7 +21,7 @@ function Services(props) {
             imperdiet ex.Suspendisse ornare imperdiet lorem, sit amet tincidunt
             libero rutrum sit amet.
           </p>
-          <a>Consult Now</a>
+          <a href="consult">Consult Now</a>
         </div>
 
         <div className={`services-box-text`}>
@@ -38,7 +38,7 @@ function Services(props) {
             imperdiet ex.Suspendisse ornare imperdiet lorem, sit amet tincidunt
             libero rutrum sit amet.
           </p>
-          <a>Consult Now</a>
+          <a href="consult">Consult Now</a>
         </div>
         <div className={`services-box-image`}>
           <img src={props.image} alt="services_image"></img>

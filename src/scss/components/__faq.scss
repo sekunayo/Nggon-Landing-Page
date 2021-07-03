@@ -1,0 +1,70 @@
+.faq {
+  grid-column: 2/2;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  height: 600px;
+  align-items: center;
+  &-box {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-column-gap: 50px;
+    height: 350px;
+  }
+  &-first-box {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, auto);
+    grid-row-gap: 20px;
+    & h3 {
+      width: 250px;
+    }
+    &-image {
+      height: 350px;
+      width: 100%;
+      & img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &-second-box {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, auto);
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    align-self: flex-end;
+    overflow-y: auto;
+  }
+  &-accordion {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 32px;
+    & p {
+      font-size: 0.85rem;
+      color: $grey;
+    }
+    &-text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      & h5 {
+        font-size: 1rem;
+        color: $black;
+        margin-bottom: 5px;
+      }
+    }
+    & i {
+      color: $green;
+      cursor: pointer;
+    }
+  }
+}
+.accordion-inactive {
+  border: 1px solid $light-grey;
+}
+.accordion-active {
+  border: 1px solid $green;
+}
